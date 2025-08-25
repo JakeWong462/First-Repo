@@ -143,3 +143,19 @@ h4 {
      transform: translateY(1px); /* Example: Slight downward shift */
         box-shadow: none; /* Example: Remove shadow when pressed */
 }
+footer{
+  display:flex;
+  width: 100%;
+  background-color: black;
+  justify-content:space-between;
+}
+.logo-footer{
+margin-top:13px;
+margin-left:13px;
+margin-bottom:10px;
+
+}
+.social-links{
+  margin-right:100px;
+  margin-top: 75px;
+}

@@ -148,6 +148,7 @@ footer{
   width: 100%;
   background-color: black;
   justify-content:space-between;
+  margin-top:30px;  
 }
 .logo-footer{
 margin-top:13px;
@@ -157,5 +158,38 @@ margin-bottom:10px;
 }
 .social-links{
   margin-right:100px;
-  margin-top: 75px;
+  margin-top: 39px;
+}
+.social-links a:hover{
+    color: red;
+}
+.social-links a{
+    color:white;
+    text-decoration:none
+}
+#twitter {
+  margin-bottom:30px;
+}
+#facebook {
+ margin-bottom:30px;
+    
+}
+#instagram {
+ margin-top:30px;
+ 
+}
+#twitter-photo {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+#facebook-photo {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+#instagram-photo {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }

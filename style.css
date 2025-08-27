@@ -11,8 +11,8 @@ main {
   max-width: 1024px;
   margin: auto;
 }
-#logo{
-    margin-top:5px;
+#logo {
+  margin-top: 5px;
 }
 .header {
   width: 100%;
@@ -55,7 +55,6 @@ h1 {
   margin-bottom: 20px;
 }
 nav {
-  
   padding: 10px 0; /* Vertical padding */
 }
 
@@ -90,31 +89,30 @@ li {
   margin-bottom: 25px;
 }
 .cards-container {
+  width: 100%;
   display: flex;
-  justify-content:center;
-  align-items:stretch;
-  flex-wrap:wrap;
-  gap:100px;
-  padding:20px;
-   align-items:start;
-   align-items:center;
-   align-items:end;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding: 20px;
 }
+
 .card {
-  max-width: 350px;
+  width: 100px;
   border: solid;
   background-color: white;
   border-radius: 25px;
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
-  flex-grow:1
-  display:flex;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-img img {
-  width: 100%;
+  max-width: 100%;
+  height: 300px;
   border-radius: 20px 20px 0px 0px;
-  width:200px;
-  height:200px;
 }
 
 .card-content {
@@ -131,31 +129,62 @@ h4 {
   border: none; /* Remove default border */
   border-radius: 8px; /* Rounded corners */
   font-size: 13px; /* Text size */
-  transition: width 0.3s
-   
-
+  transition: width 0.3s;
 }
-#card-button:hover{
-    color: #ecf0f1;
-     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+#card-button:hover {
+  color: #ecf0f1;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-#card-button:active{
-     transform: translateY(1px); /* Example: Slight downward shift */
-        box-shadow: none; /* Example: Remove shadow when pressed */
+#card-button:active {
+  transform: translateY(1px); /* Example: Slight downward shift */
+  box-shadow: none; /* Example: Remove shadow when pressed */
 }
-footer{
-  display:flex;
+footer {
+  display: flex;
   width: 100%;
   background-color: black;
-  justify-content:space-between;
+  justify-content: space-between;
+  margin-top: 30px;
 }
-.logo-footer{
-margin-top:13px;
-margin-left:13px;
-margin-bottom:10px;
-
+.logo-footer {
+  margin-top: 13px;
+  margin-left: 13px;
+  margin-bottom: 10px;
 }
-.social-links{
-  margin-right:100px;
-  margin-top: 75px;
+.social-links {
+  margin-right: 100px;
+  margin-top: 34px;
+  display: flex;
+  flex-direction: column;
+}
+.social-links a:hover {
+  color: red;
+}
+.social-links a {
+  color: white;
+  text-decoration: none;
+}
+#twitter {
+  margin-bottom: 30px;
+}
+#facebook {
+  margin-bottom: 30px;
+}
+#instagram {
+  margin-top: 30px;
+}
+#twitter-photo {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+#facebook-photo {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+#instagram-photo {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }

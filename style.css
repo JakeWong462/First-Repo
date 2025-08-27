@@ -143,14 +143,20 @@ footer {
   display: flex;
   width: 100%;
   background-color: black;
+<<<<<<< HEAD
   justify-content: space-between;
   margin-top: 30px;
+=======
+  justify-content:space-between;
+  margin-top:30px;  
+>>>>>>> 1a2f4f75c879cca9774035b7cd1beb83ebac92b2
 }
 .logo-footer {
   margin-top: 13px;
   margin-left: 13px;
   margin-bottom: 10px;
 }
+<<<<<<< HEAD
 .social-links {
   margin-right: 100px;
   margin-top: 34px;
@@ -172,6 +178,29 @@ footer {
 }
 #instagram {
   margin-top: 30px;
+=======
+.social-links{
+  margin-right:100px;
+  margin-top: 39px;
+}
+.social-links a:hover{
+    color: red;
+}
+.social-links a{
+    color:white;
+    text-decoration:none
+}
+#twitter {
+  margin-bottom:30px;
+}
+#facebook {
+ margin-bottom:30px;
+    
+}
+#instagram {
+ margin-top:30px;
+ 
+>>>>>>> 1a2f4f75c879cca9774035b7cd1beb83ebac92b2
 }
 #twitter-photo {
   width: 20px;

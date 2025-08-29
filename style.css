@@ -96,6 +96,7 @@ li {
   flex-wrap: wrap;
   gap: 100px;
   padding: 20px;
+  flex: wrap;
 }
 
 .card {
@@ -107,12 +108,14 @@ li {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  flex: wrap;
 }
 
 .card-img img {
   max-width: 100%;
   height: 300px;
   border-radius: 20px 20px 0px 0px;
+  flex: wrap;
 }
 
 .card-content {
@@ -143,77 +146,45 @@ footer {
   display: flex;
   width: 100%;
   background-color: black;
-<<<<<<< HEAD
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 30px;
-=======
-  justify-content:space-between;
-  margin-top:30px;  
->>>>>>> 1a2f4f75c879cca9774035b7cd1beb83ebac92b2
 }
-.logo-footer {
+.logo-footer img {
   margin-top: 13px;
   margin-left: 13px;
   margin-bottom: 10px;
 }
-<<<<<<< HEAD
+#nba-text {
+  float: right;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 30px;
+  color: #ffa500;
+}
 .social-links {
-  margin-right: 100px;
-  margin-top: 34px;
   display: flex;
   flex-direction: column;
-}
-.social-links a:hover {
-  color: red;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 .social-links a {
   color: white;
   text-decoration: none;
 }
-#twitter {
-  margin-bottom: 30px;
+.social-links a:hover {
+  color: red;
 }
-#facebook {
-  margin-bottom: 30px;
+.social-links-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
-#instagram {
-  margin-top: 30px;
-=======
-.social-links{
-  margin-right:100px;
-  margin-top: 39px;
-}
-.social-links a:hover{
-    color: red;
-}
-.social-links a{
-    color:white;
-    text-decoration:none
+.social-links-item img {
+  width: 20px;
+  height: 20px;
 }
 #twitter {
-  margin-bottom:30px;
-}
-#facebook {
- margin-bottom:30px;
-    
-}
-#instagram {
- margin-top:30px;
- 
->>>>>>> 1a2f4f75c879cca9774035b7cd1beb83ebac92b2
-}
-#twitter-photo {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}
-#facebook-photo {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}
-#instagram-photo {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
+  margin-left: -15px;
 }

@@ -7,7 +7,7 @@ body {
   background-color: #fffacd;
   height: 100vh;
 }
-main {
+#index-main {
   max-width: 1024px;
   margin: auto;
 }
@@ -42,7 +42,7 @@ h1 {
   background-color: aqua;
   color: black;
 }
-.steph {
+#steph {
   border-radius: 25px;
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
@@ -187,4 +187,28 @@ footer {
 }
 #twitter {
   margin-left: -15px;
+}
+#about-me-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 50px;
+  color: black;
+}
+.steph {
+  border-radius: 50%;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+  margin-top: 100px;
+  margin-bottom: 20px;
+  margin-left: 200px;
+  width: 600px;
+  height: 600px;
+}
+.biography-container {
+}
+.contact-name {
+  text-align: center;
+  margin-top: 40px;
+}
+#first-username {
+  margin-right: 7px;
 }

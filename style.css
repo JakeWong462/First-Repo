@@ -188,27 +188,79 @@ footer {
 #twitter {
   margin-left: -15px;
 }
+.about-container{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.jake {
+  border-radius: 50%;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+  width:400px;
+  height:400px;
+  object-fit: cover;
+  margin-bottom:30px;
+}
+#about-paragraph{
+    line-height: 2;
+}
+.profile-container {
+  display: flex;
+}
+.biography-container {
+  margin-left: 30px;
+  border:solid;
+  padding:10px;
+  height:400px;
+  width:400px;
+  text-align: center;
+}
 #about-me-title {
   text-align: center;
   margin-top: 20px;
   font-size: 50px;
   color: black;
+  margin-bottom:20px;
 }
-.steph {
-  border-radius: 50%;
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
-  margin-top: 100px;
-  margin-bottom: 20px;
-  margin-left: 200px;
-  width: 600px;
-  height: 600px;
-}
-.biography-container {
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border:solid black;
+  width: 400px;
+  margin: auto; 
+  margin-bottom: 40px;
 }
 .contact-name {
-  text-align: center;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 #first-username {
-  margin-right: 7px;
+  margin-right: 5px;
+}
+.contact-email input[type="email"] {
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;}
+.contact-message textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.form-wrapper button{
+  width: 100%;
+  padding:10px;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 7px;
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: 10px;
+  border:none;
+}
+.form-wrapper button:hover {
+  background-color: dodgerblue ;
+  color: white;
 }

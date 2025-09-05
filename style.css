@@ -6,10 +6,14 @@
 body {
   background-color: #fffacd;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
-#index-main {
+main {
   max-width: 1024px;
   margin: auto;
+  margin-bottom: 60px;
 }
 #logo {
   margin-top: 5px;
@@ -188,27 +192,131 @@ footer {
 #twitter {
   margin-left: -15px;
 }
+.about-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.jake {
+  border-radius: 50%;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+#about-paragraph {
+  line-height: 2;
+  font-size: 16px;
+}
+.profile-container {
+  display: flex;
+}
+.biography-container {
+  margin-left: 30px;
+  border: solid;
+  padding: 10px;
+  height: 400px;
+  width: 400px;
+  text-align: center;
+}
 #about-me-title {
   text-align: center;
   margin-top: 20px;
   font-size: 50px;
   color: black;
-}
-.steph {
-  border-radius: 50%;
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
-  margin-top: 100px;
   margin-bottom: 20px;
-  margin-left: 200px;
-  width: 600px;
-  height: 600px;
 }
-.biography-container {
+#contact-us-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 50px;
+  color: black;
+}
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: dashed;
+  border-color: black;
+  width: 450px;
+  height: 250px;
+  margin: auto;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: lightgreen;
+  justify-content: center;
 }
 .contact-name {
-  text-align: center;
-  margin-top: 40px;
+  margin-top: 10px;
+}
+
+.contact-email input[type="email"] {
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.contact-message textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.form-wrapper button {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 7px;
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.form-wrapper button:hover {
+  background-color: dodgerblue;
+  color: white;
 }
 #first-username {
-  margin-right: 7px;
+  background-color: gainsboro;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  margin-right: 5px;
+  height: 30px;
+  width: 200px;
+  font-size: 13px;
+}
+#last-username {
+  background-color: gainsboro;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  height: 30px;
+  font-size: 13px;
+}
+#email {
+  background-color: gainsboro;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  height: 30px;
+  font-size: 13px;
+}
+#message {
+  background-color: gainsboro;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  border-width: 2px;
+}
+.form-box {
+  margin-bottom: 100px;
+}
+input::placeholder {
+  color: black;
+}
+textarea::placeholder {
+  color: black;
 }

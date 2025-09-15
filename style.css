@@ -284,7 +284,6 @@ footer {
 }
 #first-username {
   margin-right: 7px;
-}
   background-color: gainsboro;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
@@ -324,12 +323,18 @@ textarea::placeholder {
 }
 #gallery-title {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 50px;
   color: black;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
-
+#grid-2-title{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#grid-2-paragraph{
+  margin-top: 10px;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -365,12 +370,25 @@ textarea::placeholder {
 .i-five {
   grid-column: 2/4;
   grid-row: 3;
+  max-height:359.85px;
 }
 .i-one img {
   object-fit: cover;
   width: 100%;
+  height: 100%;
 }
-.i-four img {
+.i-two img {
   object-fit: cover;
-  width: 100%;
+  width:100%;
+  height:100%;
+}
+.i-three img {
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+.i-five img {
+  object-fit: cover;
+  width:666px;
+  height:100%;
 }

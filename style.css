@@ -321,6 +321,16 @@ input::placeholder {
 textarea::placeholder {
   color: black;
 }
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 5px !important;
+  }
+}
 #gallery-title {
   text-align: center;
   margin-top: 30px;
@@ -328,11 +338,11 @@ textarea::placeholder {
   color: black;
   margin-bottom: 30px;
 }
-#grid-2-title{
-  margin-top: 20px;
+#grid-2-title {
+  margin-top: 30px;
   margin-bottom: 10px;
 }
-#grid-2-paragraph{
+#grid-2-paragraph {
   margin-top: 10px;
 }
 .grid-container {
@@ -341,15 +351,26 @@ textarea::placeholder {
   grid-template-rows: 1fr 1fr 1fr;
   gap: 10px;
   padding: 10px;
-  background-color: lightblue;
   width: 1024px;
   height: 1024px;
+  background-color: royalblue;
+  border-radius: 10px;
 }
 .grid-item {
   background-color: steelblue;
   color: white;
   text-align: center;
   font-size: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.grid-item img {
+  border-radius: 10px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 .i-one {
   grid-column: 1/3;
@@ -370,7 +391,7 @@ textarea::placeholder {
 .i-five {
   grid-column: 2/4;
   grid-row: 3;
-  max-height:359.85px;
+  max-height: 359.85px;
 }
 .i-one img {
   object-fit: cover;
@@ -379,16 +400,19 @@ textarea::placeholder {
 }
 .i-two img {
   object-fit: cover;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 .i-three img {
   object-fit: cover;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 .i-five img {
   object-fit: cover;
-  width:666px;
-  height:100%;
+  width: 666px;
+  height: 100%;
+}
+#grid-four-text {
+  text-align: center;
 }

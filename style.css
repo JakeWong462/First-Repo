@@ -322,15 +322,8 @@ textarea::placeholder {
   color: black;
 }
 
-@media (max-width: 600px) {
-  .grid-container {
-    grid-template-columns: 1fr !important;
-    grid-template-rows: auto !important;
-    width: 100% !important;
-    height: auto !important;
-    padding: 5px !important;
-  }
-}
+/* gallery */
+
 #gallery-title {
   text-align: center;
   margin-top: 30px;
@@ -339,7 +332,6 @@ textarea::placeholder {
   margin-bottom: 30px;
 }
 #grid-2-title {
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 #grid-2-paragraph {
@@ -351,10 +343,13 @@ textarea::placeholder {
   grid-template-rows: 1fr 1fr 1fr;
   gap: 10px;
   padding: 10px;
-  width: 1024px;
-  height: 1024px;
+  width: 100%;
+  max-width: 1024px;
+  height: auto;
+  min-height: 800px;
   background-color: royalblue;
   border-radius: 10px;
+  margin: 0 auto;
 }
 .grid-item {
   background-color: steelblue;
@@ -365,6 +360,10 @@ textarea::placeholder {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .grid-item img {
   border-radius: 10px;
@@ -415,4 +414,32 @@ textarea::placeholder {
 }
 #grid-four-text {
   text-align: center;
+}
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(5, auto) !important;
+    width: 100% !important;
+    max-width: 100%;
+    height: auto !important;
+    padding: 15px !important;
+    gap: 20px;
+    min-height: auto;
+  }
+
+  .grid-item {
+    grid-column: 1;
+    grid-row: auto;
+    min-height: 250px;
+  }
+  .grid-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center top;
+  }
+}
+@media (max-width: 480px) {
+  .grid-container {
+  }
 }

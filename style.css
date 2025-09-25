@@ -15,17 +15,14 @@ main {
   margin: auto;
   margin-bottom: 60px;
 }
-#logo {
-  margin-top: 5px;
-}
 .header {
   width: 100%;
   background-color: black;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
-.burger-menu img {
+.hamburger img {
   width: 30px;
   display: none;
 }
@@ -80,9 +77,10 @@ nav {
   color: red;
 }
 
-.logo img {
+.logo {
   width: 55px;
   height: 60px;
+  margin-top: 5px;
 }
 li {
   list-style: none;
@@ -413,28 +411,71 @@ textarea::placeholder {
 }
 .i-five img {
   object-fit: cover;
-  width: 100%;
+  width: 666px;
   height: 100%;
 }
 #grid-four-text {
   text-align: center;
 }
 @media (max-width: 768px) {
-  .burger-menu img {
+  .hamburger img {
     width: 30px;
     display: block;
   }
-  .nav-links {
-    display: flex;
-    display: block;
-  }
-  .nav-links {
-    display: none;
-  }
+  @media (max-width: 768px) {
   .header {
-    justify-content: space-between;
-    padding: 3px 10px;
+    flex-direction: column;
   }
+  .hamburger img {
+    display: block;
+    width: 30px;
+  }
+  .burger-menu {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top: 4px solid black;
+  }
+  .burger-menu.show-menu {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .burger-menu li {
+    padding: 10px;
+  }
+
+  .navlinks {
+    display: none;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+
+  .navlinks li {
+    flex-basis: 100%;
+  }
+
+  .navlinks a {
+    text-align: center;
+    font: 28px;
+  }
+
+  .navlinks a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .navlinks {
+    padding: 30px 16px;
+    margin-left: 0;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 20px;
+  }
+
   .grid-container {
     grid-template-columns: 1fr !important;
     grid-template-rows: repeat(5, auto) !important;
@@ -444,8 +485,6 @@ textarea::placeholder {
     padding: 15px !important;
     gap: 20px;
     min-height: auto;
-  }
-  .burger-menu::before {
   }
   .grid-item {
     grid-column: 1;

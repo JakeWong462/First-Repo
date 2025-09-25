@@ -8,28 +8,37 @@
   </head>
   <body>
     <div class="header">
-      <div class="logo">
+      <div class="header-nav">
         <img
-          id="logo"
           src="https://blog.logomyway.com/wp-content/uploads/2017/01/nba-logo-1.jpg"
+          class="logo"
         />
       </div>
+
+      <div class="hamburger"><label>
+        <img src="assets/burger-menu-svgrepo-com.svg" alt="Burger Menu"/>
+      </div>
+    </div>
+    <div>
       <nav>
-        <ul class="nav-links">
+        <ul class="navlinks">
           <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
+          <li><a href="about.html">About</a></li>
           <li><a href="contacts.html">Contact Us</a></li>
           <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </nav>
 
-      <div class="burger-menu"><label>
-        <img src="assets/burger-menu-svgrepo-com.svg" />
+      <div class="burger-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
       </div>
-      
     </div>
+  
     <h1 id="gallery-title">Gallery</h1>
     <main>
       <div class="grid-container">
@@ -93,5 +102,5 @@
       </ul>
     </footer>
   </body>
-  <script src="/scripts/gallery.js"></script>
+  <script src="nav.js"></script>
 </html>

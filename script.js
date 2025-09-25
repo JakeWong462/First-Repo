@@ -1,6 +1,6 @@
 const btn = document.querySelector('btn');
-btn.adddEventListener('click', sumbitName )
-function sumbitName()
+btn.addEventListener('click', submitName )
+function submitName()
 const btnHide = document.querySelector('#hide')
 hamburger.addEventListener('click',() => {
     if (menuOpen == false) {

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List</title>
+    <style>
+      .to-do-title {
+        text-align: center;
+      }
+      body {
+        text-align: center;
+      }
+      #x-button {
+        top: 0;
+        right: 0;
+        position: absolute;
+        margin: 5px;
+      }
+      .title-border {
+        border: solid;
+        height: 150px;
+        width: 1000px;
+        justify-self: center;
+        position: relative;
+      }
+      .list-border {
+        border: solid;
+        height: 1000px;
+        width: 1000px;
+        justify-self: center;
+        margin-top: -3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title-border">
+      <h1>To Do List</h1>
+      <button id="x-button">X</button>
+      <input type="text" />
+      <button id="to-do-button">Add</button>
+    </div>
+    <div class="list-border">
+      <ol>
+        <li></li>
+      </ol>
+    </div>
+    <script src="to-do-list.js"></script>
+  </body>
+</html>

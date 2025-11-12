@@ -1,21 +1,24 @@
-const addInput = document.querySelector('.title-border input[type="text"]');
+const addInput = document.querySelector(".title-border input");
 const addBtn = document.getElementById("to-do-button");
 const tasksList = document.querySelector(".list-border ol");
+const listXBtn = document.getElementById("list-x-button");
 
-addBtn.addEventListener("click", addtask);
+addBtn.addEventListener("click", addTask);
 
-function addTask() {
-  const inpValue = addInput.inpValue.trim();
-  if (inputValue != "") {
-    alert("task required");
-  } else {
-    const listItems = document.createElement("li");
-    listItemsHTML = inpValue.Value;
+function addTask(event) {
+  if (event) {
+    event.preventDefault();
   }
-}
-function showItem() {
-  listItems.push(listItems);
-  for (let i = 0; i < listItems.length; i++) {
-    tasksList.appendChild(listItems[i]);
+  const inpValue = addInput.value.trim();
+
+  if (inpValue === "") {
+    alert("Task required");
+  } else {
+    const listItem = document.createElement("li");
+    //work on delete button//
+    listItem.textContent = `<li>${inpValue} </li> ${listXBtn}`;
+
+    tasksList.appendChild(listItem);
+    addInput.value = "";
   }
 }

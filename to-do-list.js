@@ -15,10 +15,15 @@ function addTask(event) {
     alert("Task required");
   } else {
     const listItem = document.createElement("li");
-    //work on delete button//
-    listItem.textContent = `<li>${inpValue} </li> ${listXBtn}`;
+    
+    listItem.innerHTML = `${inpValue} <button class="list-x-button">X</button>`;
 
     tasksList.appendChild(listItem);
     addInput.value = "";
+    
+    const deleteBtn = listItem.querySelector(".list-x-button");
+deleteBtn.addEventListener("click", function() {
+  listItem.remove();
+});
   }
 }

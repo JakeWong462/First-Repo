@@ -5,31 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do-List</title>
     <style>
-      .to-do-title {
-        text-align: center;
+       body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(135deg, #1d428a, #c8102e);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
       }
-      body {
-        text-align: center;
+      html, body {
+        height: 100%;
+  margin: 0;
+  padding: 0;   
       }
-      #x-button {
-        top: 0;
-        right: 0;
-        position: absolute;
-        margin: 5px;
+      h1 {
+        font-size: 2.5em;
+        margin: 10px 0;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px #000;
       }
+
+ 
       .title-border {
-        border: solid;
-        height: 140px;
-        width: 1000px;
-        justify-self: center;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 20px;
+        width: 90%;
+        max-width: 600px;
         position: relative;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
       }
+
+      #x-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #c8102e;
+        border: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 5px 10px;
+        transition: 0.2s;
+      }
+
+      #x-button:hover {
+        background-color: #ff4c4c;
+      }
+
+      input[type="text"] {
+        width: 60%;
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #fff;
+        border-radius: 6px;
+        outline: none;
+        background-color: #f8f8f8;
+        color: #333;
+        margin-right: 10px;
+      }
+
+      #to-do-button {
+        background-color: #1d428a;
+        color: white;
+        font-weight: bold;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      #to-do-button:hover {
+        background-color: #2f5ac9;
+      }
+
+ 
       .list-border {
-        border: solid;
-        height: 1000px;
-        width: 1000px;
-        justify-self: center;
-        margin-top: -3px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 20px;
+        width: 90%;
+        max-width: 600px;
+        margin-top: 20px;
+        text-align: left;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+      }
+
+      ol {
+        padding-left: 25px;
+      }
+
+      li {
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 6px;
+        padding: 10px;
+        font-size: 18px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.2s;
+        margin-right: 30px;
+      }
+
+      li:hover {
+        background-color: rgba(255, 255, 255, 0.25);
+        transform: scale(1.02);
+      }
+
+      .list-x-button {
+        background-color: #c8102e;
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;  
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .list-x-button:hover {
+        background-color: #ff4c4c;
+        transform: scale(1.1);
+        }
+      input::placeholder {
+        color: #999;
       }
     </style>
   </head>
@@ -37,7 +148,7 @@
     <div class="title-border">
       <h1>To Do List</h1>
       <button id="x-button">X</button>
-      <input type="text" />
+      <input placeholder="Add a task!" type="text" />
       <button id="to-do-button">Add</button>
     </div>
 
@@ -45,7 +156,6 @@
       <ol></ol>
     </div>
 
-    <button id="list-x-button">X</button>
     <script src="to-do-list.js"></script>
   </body>
 </html>
